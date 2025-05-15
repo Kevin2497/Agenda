@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #111827;
+    margin-top: 20px;
+}
+
+
+button, .modificarContacto, .eliminarContacto, a.button-link {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+button:hover, .modificarContacto:hover, .eliminarContacto:hover, a.button-link:hover {
+    background-color: #2563eb;
+}
+
+
+#tablaContactos {
+    margin: 20px auto;
+    width: 95%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#tablaContactos th, #tablaContactos td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#tablaContactos th {
+    background-color: #facc15;
+    color: #1f2937;
+}
+
+
+#popupConfirmacion, #popupEditar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#popupConfirmacion > div, #popupEditar form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+
+#popupEditar label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#popupEditar input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+aside, nav {
+    background-color: #facc15;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+aside ul, nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li, nav li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    #tablaContactos {
+        font-size: 14px;
+    }
+
+    aside, nav {
+        text-align: center;
+    }
+
+    #popupConfirmacion > div, #popupEditar form {
+        width: 95%;
+    }
+}
